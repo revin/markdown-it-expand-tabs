@@ -33,7 +33,7 @@ var result = parser.render(...); // markdown string containing tab-indented code
 ```
 
 The default behavior is to convert leading tabs into two spaces each. You can choose
-an alternate tab with thusly:
+an alternate tab width thusly:
 
 ```js
 var parser = md().use(expandTabs, {tabWidth: 4});
