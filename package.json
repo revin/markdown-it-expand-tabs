@@ -1,0 +1,32 @@
+{
+  "name": "markdown-it-expand-tabs",
+  "version": "1.0.0",
+  "description": "markdown-it plugin to replace leading tabs with spaces in code blocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revin/markdown-it-expand-tab.git"
+  },
+  "devDependencies": {
+    "markdown-it": "^5.1.0",
+    "mocha": "^2.3.4"
+  },
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "spaces",
+    "tabs",
+    "retab",
+    "expand",
+    "code"
+  ],
+  "author": "Revin Guillen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/revin/markdown-it-expand-tab/issues"
+  },
+  "homepage": "https://github.com/revin/markdown-it-expand-tab#readme"
+}
