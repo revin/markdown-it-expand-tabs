@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/revin/markdown-it-expand-tab.git"
+    "url": "git@github.com:revin/markdown-it-expand-tabs.git"
   },
   "devDependencies": {
     "markdown-it": "^5.1.0",
