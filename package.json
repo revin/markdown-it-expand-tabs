@@ -17,6 +17,7 @@
   "keywords": [
     "markdown",
     "markdown-it",
+    "markdown-it-plugin",
     "spaces",
     "tabs",
     "retab",
