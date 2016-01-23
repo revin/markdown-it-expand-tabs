@@ -19,7 +19,7 @@ situation, then this plugin probably isn't for you.
 ## Installation
 
 ```sh
-npm install markdown-it-expand-tab
+npm install markdown-it-expand-tabs
 ```
 
 ## Usage
