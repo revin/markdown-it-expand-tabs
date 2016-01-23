@@ -1,3 +1,5 @@
+var repeat = require('lodash.repeat');
+
 module.exports = function(md, opts) {
   // default to being two spaces wide
   if (!opts || typeof opts.tabWidth === 'undefined') {
@@ -23,7 +25,7 @@ module.exports = function(md, opts) {
     // - no, jump to the character after the next newline
     while (idx > -1 && idx < content.length) {
       while (content[idx] === '\t') {
-        content = content.substring(0, idx) + ' '.repeat(tabWidth) + content.substring(idx+1);
+        content = content.substring(0, idx) + repeat(' ', tabWidth) + content.substring(idx+1);
         idx += tabWidth;
       }
       idx = content.indexOf('\n', idx) + 1;
