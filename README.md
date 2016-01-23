@@ -1,5 +1,8 @@
 # markdown-it-expand-tabs
 
+[![Build Status](https://travis-ci.org/revin/markdown-it-expand-tabs.svg?branch=master)](https://travis-ci.org/revin/markdown-it-expand-tabs)
+[![Code Climate](https://codeclimate.com/github/revin/markdown-it-expand-tabs/badges/gpa.svg)](https://codeclimate.com/github/revin/markdown-it-expand-tabs)
+
 A [markdown-it](https://www.npmjs.com/package/markdown-it) plugin to replace leading tabs with spaces in code blocks
 
 ## What it does
