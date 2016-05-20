@@ -2,6 +2,7 @@ var repeat = require('lodash.repeat');
 
 module.exports = function(md, opts) {
   // default to being two spaces wide
+  var tabWidth;
   if (!opts || typeof opts.tabWidth === 'undefined') {
     tabWidth = 2;
   } else {
