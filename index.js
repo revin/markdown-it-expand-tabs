@@ -29,7 +29,12 @@ module.exports = function(md, opts) {
         content = content.substring(0, idx) + repeat(' ', tabWidth) + content.substring(idx+1);
         idx += tabWidth;
       }
-      idx = content.indexOf('\n', idx) + 1;
+      idx = content.indexOf('\n', idx);
+
+      // if there are no `\n` characters, break
+      if (idx === -1) { break; }
+
+      idx += 1;
     }
 
     return content;
