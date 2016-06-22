@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-expand-tabs",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A markdown-it plugin to replace leading tabs with spaces in code blocks",
   "main": "index.js",
   "scripts": {
