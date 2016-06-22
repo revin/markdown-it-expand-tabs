@@ -12,7 +12,8 @@ describe('markdown-it-expand-tabs', function() {
     fixtures = {
       tab: fs.readFileSync(__dirname + '/fixtures/tab.md').toString(),
       space2: fs.readFileSync(__dirname + '/fixtures/space2.md').toString(),
-      space4: fs.readFileSync(__dirname + '/fixtures/space4.md').toString()
+      space4: fs.readFileSync(__dirname + '/fixtures/space4.md').toString(),
+      noCR: fs.readFileSync(__dirname + '/fixtures/no-cr.md').toString()
     };
   });
 
@@ -53,5 +54,14 @@ describe('markdown-it-expand-tabs', function() {
     var parser = md().use(expandTab);
     var html = parser.render(fixtures.tab);
     assert(html.indexOf('lineWithTrailingTabs();			') !== -1);
+  });
+
+  it('works on documents lacking any downstream \n characters', function() {
+    // https://github.com/revin/markdown-it-expand-tabs/issues/5
+    var parser = md().use(expandTab);
+    var html = parser.render(fixtures.noCR);
+    // the bug with one-line documents resulted in an infinite loop, so really
+    // getting *anything* here means success, so let's just check for a result
+    assert(!!html.length);
   });
 });
