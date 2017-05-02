@@ -1,5 +1,7 @@
 # markdown-it-expand-tabs
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/revin/markdown-it-expand-tabs.svg)](https://greenkeeper.io/)
+
 A [markdown-it](https://www.npmjs.com/package/markdown-it) plugin to replace leading tabs with spaces in code blocks
 
 [![Build Status](https://travis-ci.org/revin/markdown-it-expand-tabs.svg?branch=master)](https://travis-ci.org/revin/markdown-it-expand-tabs)
