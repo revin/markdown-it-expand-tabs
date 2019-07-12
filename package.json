@@ -11,7 +11,7 @@
     "url": "git@github.com:revin/markdown-it-expand-tabs.git"
   },
   "devDependencies": {
-    "markdown-it": "^8.0.1",
+    "markdown-it": "^9.0.1",
     "mocha": "^5.0.3"
   },
   "keywords": [
